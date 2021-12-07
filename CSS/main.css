@@ -158,7 +158,7 @@ header {
 /* ----Favorites---- */
 .favorites {
   margin-top: 2%;
-  height: 100%;
+  height: fit-content;
   text-align: center;
   color: #24252a;
 }
