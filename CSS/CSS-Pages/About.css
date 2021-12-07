@@ -1,0 +1,269 @@
+/* ----HTML---- */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat";
+  background-color: #edf0f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ----Nav Bar---- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
+
+.iconImage {
+  max-width: 45px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* ----Mobile Nav---- */
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+/* ----Splash Page---- */
+.splashPage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../../Images/Backgrounds/Computer5.jpg");
+  height: 88%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splashPage h1 {
+  font-size: 100px;
+  color: #edf0f1;
+  background: none;
+  font-weight: 500;
+}
+
+/* ----Main---- */
+.main {
+  margin-top: 100px;
+  height: 1100px;
+  text-align: center;
+  color: #24252a;
+  display: block;
+}
+
+.main h2 {
+  font-size: 70px;
+}
+/* ---- interests ---- */
+.interests {
+  height: 300px;
+}
+
+/* ---- education ---- */
+.education {
+  height: 300px;
+}
+
+/* ---- languages ---- */
+.container {
+  width: 75%;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  margin-bottom: 1.5%;
+}
+
+.skills {
+  text-align: right;
+  margin-right: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #edf0f1;
+  border-radius: 50px;
+}
+
+.html {
+  width: 90%;
+  background-color: #e44d26;
+}
+
+.css {
+  width: 80%;
+  background-color: #264de4;
+}
+
+.js {
+  width: 30%;
+  background-color: #f7e018;
+}
+
+.c-sharp {
+  width: 76%;
+  background-color: #672079;
+}
+
+.python {
+  width: 70%;
+  background-color: #24252a;
+}
+
+/* ----Responsive Design---- */
+@media only screen and (max-width: 1586px) {
+  .splashPage h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1091px) {
+  .myButton {
+    margin: 4% 4% 0 4%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+
+  .splashPage h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .interests h2 {
+    font-size: 50px;
+  }
+
+  .education h2 {
+    font-size: 50px;
+  }
+
+  .languages h2 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .splashPage h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

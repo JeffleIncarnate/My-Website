@@ -1,0 +1,546 @@
+/* ----HTML---- */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat";
+  background-color: #edf0f1;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+/* ----Nav Bar---- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: rgba(36, 37, 42, 1);
+}
+
+.iconImage {
+  max-width: 45px;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* ----Mobile Nav---- */
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+/* ----Splash Page---- */
+.splashPage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../Images/Backgrounds/Computer1.jpg");
+  box-shadow: 00px 1px 10px 00 rgba(0, 0, 0, 0.7),
+    0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  height: 68%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position-x: -10px;
+  border-radius: 20px;
+  margin: 1%;
+  filter: blur(0.3px);
+}
+
+.splashPage h1 {
+  font-size: 100px;
+  color: #edf0f1;
+  background: none;
+  font-weight: 500;
+}
+
+/* ----Learn More---- */
+.learnMore {
+  margin-top: 50px;
+  height: auto;
+  text-align: center;
+  color: #24252a;
+  display: block;
+}
+
+.learnMore h2 {
+  font-size: 70px;
+}
+
+/* ----Favorites---- */
+.favorites {
+  margin-top: 2%;
+  height: 2350px;
+  text-align: center;
+  color: #24252a;
+}
+
+.favorites h2 {
+  font-size: 70px;
+}
+
+/* ----Games---- */
+.cubePhysics {
+  height: auto;
+  float: left;
+  width: 38%;
+  margin: 5%;
+}
+
+.cubePhysics h3 {
+  font-size: 50px;
+  margin-bottom: 1.5%;
+}
+
+.cubePhysics img {
+  max-width: 97%;
+  margin-bottom: 3%;
+  box-shadow: 00px 1px 10px 00 rgba(0, 0, 0, 0.7),
+    0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s ease;
+  filter: blur(1.5px);
+}
+
+.cubePhysics img:hover {
+  transform: scale(1.1);
+  filter: none;
+  cursor: pointer;
+}
+
+/* ----Pogformer---- */
+.pogformer {
+  height: auto;
+  float: right;
+  width: 38%;
+  margin: 5%;
+}
+
+.pogformer h3 {
+  font-size: 50px;
+  margin-bottom: 1.5%;
+}
+
+.pogformer img {
+  max-width: 97%;
+  margin-bottom: 3%;
+  box-shadow: 00px 1px 10px 00 rgba(0, 0, 0, 0.7),
+    0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s ease;
+  filter: blur(1.5px);
+}
+
+.pogformer img:hover {
+  transform: scale(1.1);
+  filter: none;
+  cursor: pointer;
+}
+
+/* ----Right---- */
+.right {
+  height: auto;
+  float: right;
+  width: 38%;
+  margin: 5%;
+}
+
+.right h3 {
+  font-size: 50px;
+  margin-bottom: 1.5%;
+}
+
+.right img {
+  max-width: 97%;
+  margin-bottom: 3%;
+  box-shadow: 00px 1px 10px 00 rgba(0, 0, 0, 0.7),
+    0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.5s, filter 0.5s ease;
+  border-radius: 20px;
+  filter: blur(1.5px);
+}
+
+.right img:hover {
+  transform: scale(1.1);
+  filter: none;
+  cursor: pointer;
+}
+
+/* ----Left---- */
+.left {
+  height: auto;
+  float: left;
+  width: 38%;
+  margin: 5%;
+}
+
+.left h3 {
+  font-size: 50px;
+  margin-bottom: 1.5%;
+}
+
+.left img {
+  max-width: 97%;
+  margin-bottom: 3%;
+  box-shadow: 00px 1px 10px 00 rgba(0, 0, 0, 0.7),
+    0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  transition: transform 0.5s, filter 0.5s ease;
+  filter: blur(1.5px);
+}
+
+.left img:hover {
+  transform: scale(1.1);
+  filter: none;
+  cursor: pointer;
+}
+
+/* ----Button---- */
+.myButton {
+  padding: 9px 25px;
+  background-color: rgb(0, 136, 169);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 2% 7% 0% 7%;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+  box-shadow: 00px 1px 10px 00 rgba(0, 0, 0, 0.7),
+    0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow 1s ease 0s, background-color 1s ease 0s;
+}
+
+.myButton:hover {
+  background-color: rgb(0, 71, 99);
+  box-shadow: none;
+}
+
+/* ----Footer---- */
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #24252a;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #0088a9;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #0088a9;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  background-color: #0088a9;
+}
+
+/* ----Responsive Design---- */
+@media only screen and (max-width: 1586px) {
+  .splashPage h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1091px) {
+  .myButton {
+    margin: 4% 4% 0 4%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+
+  .cubePhysics {
+    width: 96%;
+    float: none;
+    margin: none;
+    margin: 3% 2% 0 2%;
+  }
+
+  .cubePhysics img {
+    max-width: 80%;
+    margin-top: 10%;
+  }
+
+  .pogformer {
+    width: 96%;
+    float: none;
+    margin: none;
+    margin: 3% 2% 0 2%;
+  }
+
+  .pogformer img {
+    max-width: 80%;
+    margin-top: 10%;
+  }
+
+  .left {
+    width: 96%;
+    float: none;
+    margin: none;
+    margin: 3% 2% 0 2%;
+  }
+
+  .left img {
+    max-width: 80%;
+    margin-top: 10%;
+  }
+
+  .right {
+    width: 96%;
+    float: none;
+    margin: none;
+    margin: 3% 2% 0 2%;
+  }
+
+  .right img {
+    max-width: 80%;
+    margin-top: 10%;
+  }
+
+  .splashPage h1 {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .learnMore h2 {
+    font-size: 60px;
+  }
+
+  .favorites h2 {
+    font-size: 50px;
+  }
+
+  .cubePhysics h3 {
+    font-size: 40px;
+  }
+  .pogformer h3 {
+    font-size: 40px;
+  }
+
+  .right h3 {
+    font-size: 40px;
+  }
+
+  .left h3 {
+    font-size: 40px;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .splashPage h1 {
+    font-size: 50px;
+  }
+
+  .learnMore h2 {
+    font-size: 50px;
+  }
+
+  .favorites h2 {
+    font-size: 40px;
+  }
+
+  .cubePhysics h3 {
+    font-size: 30px;
+  }
+  .pogformer h3 {
+    font-size: 30px;
+  }
+
+  .right h3 {
+    font-size: 30px;
+  }
+
+  .left h3 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
