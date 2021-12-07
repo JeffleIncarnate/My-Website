@@ -13,10 +13,6 @@ html {
   padding: 0;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 /* ----Nav Bar---- */
 header {
   display: flex;

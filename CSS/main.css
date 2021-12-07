@@ -1,6 +1,7 @@
 /* ----HTML---- */
 body,
 html {
+  line-height: 1.5;
   height: 100%;
   margin: 0;
   font-family: "Montserrat";
@@ -9,9 +10,9 @@ html {
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 hr {
@@ -134,20 +135,17 @@ header {
 /* ----Splash Page---- */
 .splashPage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../Images/Backgrounds/Computer1.jpg");
-  box-shadow: 00px 1px 10px 00 rgba(0, 0, 0, 0.7),
-    0 6px 30px 0 rgba(0, 0, 0, 0.19);
-  height: 68%;
+  url("../Images/Backgrounds/Computer1.jpg");
+  height: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position-x: -10px;
   border-radius: 20px;
   margin: 1%;
-  filter: blur(0.3px);
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
 .splashPage h1 {
@@ -157,23 +155,10 @@ header {
   font-weight: 500;
 }
 
-/* ----Learn More---- */
-.learnMore {
-  margin-top: 50px;
-  height: auto;
-  text-align: center;
-  color: #24252a;
-  display: block;
-}
-
-.learnMore h2 {
-  font-size: 70px;
-}
-
 /* ----Favorites---- */
 .favorites {
   margin-top: 2%;
-  height: 2350px;
+  height: 100%;
   text-align: center;
   color: #24252a;
 }
@@ -320,74 +305,87 @@ header {
   box-shadow: none;
 }
 
-/* ----Footer---- */
-.container {
-  max-width: 1170px;
-  margin: auto;
+/* ---- Footer ---- */
+.container{
+	max-width: 1170px;
+	margin:auto;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
 }
-ul {
-  list-style: none;
+
+ul{
+	list-style: none;
 }
-.footer {
-  background-color: #24252a;
-  padding: 70px 0;
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
 }
-.footer-col {
-  width: 25%;
-  padding: 0 15px;
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
 }
-.footer-col h4 {
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
 }
-.footer-col h4::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #0088a9;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #0088a9;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
 }
-.footer-col ul li:not(:last-child) {
-  margin-bottom: 10px;
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
 }
-.footer-col ul li a {
-  font-size: 16px;
-  text-transform: capitalize;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
 }
-.footer-col ul li a:hover {
-  color: #0088a9;
-  padding-left: 8px;
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
 }
-.footer-col .social-links a {
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover {
-  background-color: #0088a9;
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
 
 /* ----Responsive Design---- */
@@ -493,18 +491,6 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 10px;
-  }
-}
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 540px) {
   .splashPage h1 {
     font-size: 50px;
@@ -531,6 +517,19 @@ ul {
 
   .left h3 {
     font-size: 30px;
+  }
+}
+
+@media(max-width: 767px){
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
   }
 }
 
