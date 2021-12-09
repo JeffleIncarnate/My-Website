@@ -129,14 +129,17 @@ header {
 /* ----Splash Page---- */
 .splashPage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../../Images/Backgrounds/Computer2.jpg");
-  height: 88%;
+  url("../../Images/Backgrounds/Computer5.jpg");
+  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  margin: 1%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
 .splashPage h1 {
