@@ -130,14 +130,17 @@ header {
 /* ----Splash Page---- */
 .splashPage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../../Images/Backgrounds/Computer3.jpg");
-  height: 88%;
+  url("../../Images/Backgrounds/Computer5.jpg");
+  height: 60%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  margin: 1%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
 .splashPage h1 {
@@ -161,7 +164,7 @@ header {
 
 /* ----Cube Physics---- */
 .cubePhysics {
-  height: 500px;
+  height: auto;
   float: left;
   width: 38%;
   margin: 5%;
@@ -189,7 +192,7 @@ header {
 
 /* ----Pogformer---- */
 .pogformer {
-  height: 500px;
+  height: auto;
   float: right;
   width: 38%;
   margin: 5%;
@@ -237,16 +240,95 @@ header {
   box-shadow: none;
 }
 
+/* ---- Footer ---- */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+  background-color: #24262b;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer{
+	background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+  background-color: #24252a;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #0088a9;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
 /* ----Responsive Design---- */
 @media only screen and (max-width: 1586px) {
   .splashPage h1 {
     text-align: center;
-  }
-}
-
-@media only screen and (max-width: 1291px) {
-  .main {
-    height: 550px;
   }
 }
 
