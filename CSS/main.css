@@ -485,10 +485,6 @@ ul{
   .left h3 {
     font-size: 40px;
   }
-
-  hr {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 540px) {
