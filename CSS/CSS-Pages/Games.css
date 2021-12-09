@@ -1,20 +1,26 @@
 /* ----HTML---- */
 body,
 html {
+  line-height: 1.5;
   height: 100%;
   margin: 0;
   font-family: "Montserrat";
   background-color: #edf0f1;
+  scroll-behavior: smooth;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  display: none;
+hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 /* ----Nav Bar---- */
@@ -153,7 +159,7 @@ header {
 /* ----Main---- */
 .main {
   margin-top: 2%;
-  height: 700px;
+  height: auto;
   text-align: center;
   color: #24252a;
 }
