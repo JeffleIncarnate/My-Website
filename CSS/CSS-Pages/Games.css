@@ -130,7 +130,7 @@ header {
 /* ----Splash Page---- */
 .splashPage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-  url("../../Images/Backgrounds/Computer2.jpg");
+  url("../../Images/Backgrounds/sj-objio-s-aktnfUOjs-unsplash.jpg");
   height: 60%;
   background-position: center;
   background-repeat: no-repeat;
@@ -326,6 +326,19 @@ ul {
 }
 
 /* ----Responsive Design---- */
+@media(max-width: 767px){
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1586px) {
   .splashPage h1 {
     text-align: center;

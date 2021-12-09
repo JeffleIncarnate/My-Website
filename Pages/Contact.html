@@ -1,59 +1,129 @@
 <!DOCTYPE html>
-     <head>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <link rel="icon" href="Images/Profile-Picture-Non_Transparent.png">
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <title>Contact</title>
-          <meta name="description" content="">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="../CSS/CSS-Pages/Contact.css">
-          <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-     </head>
-     <body>
-          <!--Nav Bar-->
-          <header id="wrapperHeader">
-               <a class="logo" href="../index.html"><img class="iconImage" src="../Images/Profile-Picture-Non_Transparent.png" alt="logo"></a>
-               <nav>
-                    <ul class="nav__links">
-                         <li><a href="Games.html">Games</a></li>
-                         <li><a href="Projects.html">Projects</a></li>
-                         <li><a href="About.html">About</a></li>
-                    </ul>
-               </nav>
-               <a class="cta" href="Contact.html">Contact</a>
-               <p class="menu cta">Menu &#9776;</p>
-          </header>
+<head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="icon" href="../Images/Profile-Picture-Non_Transparent.png">
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Contact</title>
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="../CSS/CSS-Pages/Contact.css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+     <!--Nav Bar-->
+     <header id="wrapperHeader">
+          <a class="logo" href="../index.html"><img class="iconImage" src="../Images/Profile-Picture-Non_Transparent.png" alt="logo"></a>
+          <nav>
+               <ul class="nav__links">
+                    <li><a href="Games.html">Games</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="About.html">About</a></li>
+               </ul>
+          </nav>
+          <a class="cta" href="Contact.html">Contact</a>
+          <p class="menu cta">Menu &#9776;</p>
+     </header>
 
-          <!--Side Nav Bar Mobile-->
-          <div class="overlay">
-               <a class="close">&times;</a>
-               <div class="overlay__content">
-                    <a href="Games.html">Games</a>
-                    <a href="Projects.html">Projects</a>
-                    <a href="About.html">About</a>
-                    <a href="Contact.html">Contact</a>
+     <!--Side Nav Bar Mobile-->
+     <div class="overlay">
+          <a class="close">&times;</a>
+          <div class="overlay__content">
+               <a href="Games.html">Games</a>
+               <a href="Projects.html">Projects</a>
+               <a href="About.html">About</a>
+               <a href="Contact.html">Contact</a>
+          </div>
+     </div>
+
+     <!--Splash Page-->
+     <div class="splashPage">
+          <h1>Contact</h1>
+     </div>
+
+     <!--Main-->
+     <form action="https://formsubmit.co/dhruvrayat50@gmail.com" method="POST">
+          <!--Honeypot-->
+          <input type="text" name="_honey" style="display: none;">
+
+          <!--Captcha Disable-->
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="hidden" name="_next"
+               value="https://dhruv-rayat1.github.io/OJC-Badges-Website/Pages/Main/Success.html">
+
+          <div class="title">
+               <h2>CONTACT</h2>
+          </div>
+          <div class="half">
+               <div class="item">
+                    <label for="name">NAME</label>
+                    <input placeholder="Your Name" type="text" id="name" name="Name" required>
+               </div>
+               <div class="item">
+                    <label for="email">EMAIL</label>
+                    <input placeholder="Your Email" type="text" id="email" name="Email" required>
                </div>
           </div>
-
-          <!--Splash Page-->
-          <div class="splashPage">
-               <h1>Contact</h1>
+          <div class="full">
+               <label for="message">MESSAGE</label>
+               <textarea placeholder="Message" id="message" name="Message" required></textarea>
           </div>
+          <div class="action">
+               <input type="submit" value="SEND MESSAGE">
+               <input type="reset" value="RESET">
+          </div>
+          <div class="icons">
+               <a target="_blank" href="https://www.facebook.com/OJCollege/"><i class="fab fa-facebook"></i></a>
+               <a target="_blank" href="https://twitter.com/ojcollege"><i class="fab fa-twitter"></i></a>
+               <a target="_blank" href="https://www.instagram.com/ormistonjc/"><i class="fab fa-instagram"></i></a>
+          </div>
+     </form>
 
-          <!--Main-->
-               <!--Learn More-->
-               <div class="contacts">
-                    <h2>Contact Me!</h2>
-                    <p>Click the buttons below to Contact Me!</p>
-                    <a href="https://www.google.com" target="_blank" class="fa fa-google"></a>
-                    <a href="https://github.com/Dhruv-Rayat1" target="_blank" class="fa fa-github"></a>
-                    <a href="https://www.instagram.com/dhruv_rayat/" target="_blank" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/RayatDhruv" target="_blank" class="fa fa-twitter"></a>
+     <!--Footer-->
+     <footer class="footer" data-aos="fade">
+          <div class="container">
+               <div class="row">
+                    <div class="footer-col">
+                         <h4>Main</h4>
+                         <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="Pages/About.html">About Us</a></li>
+                              <li><a href="Pages/Contact.html">Contact</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-col">
+                         <h4>Code</h4>
+                         <ul>
+                              <li><a href="Pages/Games.html">Games</a></li>
+                              <li><a href="Pages/Projects.html">Projects</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-col">
+                         <h4>follow us</h4>
+                         <div class="social-links">
+                              <a target="_blank" href="https://github.com/Dhruv-Rayat1"><i
+                                        class="fab fa-github"></i></a>
+                              <a target="_blank" href="https://twitter.com/RayatDhruv"><i
+                                        class="fab fa-twitter"></i></a>
+                              <a target="_blank" href="https://www.instagram.com/dhruv_rayat/"><i
+                                        class="fab fa-instagram"></i></a>
+                         </div>
+                    </div>
                </div>
+          </div>
+     </footer>
 
-          <!--Scripts-->
-          <script type="text/javascript" src="../JavaScript/StickyNav.js"></script>
-          <script type="text/javascript" src="../JavaScript/mobile.js"></script>
-     </body>
+     <!--Scripts-->
+     <script type="text/javascript" src="../JavaScript/StickyNav.js"></script>
+     <script type="text/javascript" src="../JavaScript/mobile.js"></script>
+
+     <!--AOS-->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+          AOS.init({offset: 1, duration: 1500 });
+     </script>
+</body>
 </html>
