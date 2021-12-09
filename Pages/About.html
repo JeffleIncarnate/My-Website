@@ -1,105 +1,151 @@
 <!DOCTYPE html>
-     <head>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <link rel="icon" href="Images/Profile-Picture-Non_Transparent.png">
-          <meta charset="utf-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <title>About Me</title>
-          <meta name="description" content="">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" href="../CSS/CSS-Pages/About.css">
-          <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
-     </head>
-     <body>
-          <!--Nav Bar-->
-          <header id="wrapperHeader">
-               <a class="logo" href="../index.html"><img class="iconImage" src="../Images/Profile-Picture-Non_Transparent.png" alt="logo"></a>
-               <nav>
-                    <ul class="nav__links">
-                         <li><a href="../Pages/Games.html">Games</a></li>
-                         <li><a href="../Pages/Projects.html">Projects</a></li>
-                         <li><a href="../Pages/About.html">About</a></li>
-                    </ul>
-               </nav>
-               <a class="cta" href="../Pages/Contact.html">Contact</a>
-               <p class="menu cta">Menu &#9776;</p>
-          </header>
+<head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="icon" href="../Images/Profile-Picture-Non_Transparent.png">
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>About Me</title>
+     <meta name="description" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="../CSS/CSS-Pages/About.css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+     <!--Nav Bar-->
+     <header id="wrapperHeader">
+          <a class="logo" href="../index.html"><img class="iconImage" src="../Images/Profile-Picture-Non_Transparent.png" alt="logo"></a>
+          <nav>
+               <ul class="nav__links">
+                    <li><a href="../Pages/Games.html">Games</a></li>
+                    <li><a href="../Pages/Projects.html">Projects</a></li>
+                    <li><a href="../Pages/About.html">About</a></li>
+               </ul>
+          </nav>
+          <a class="cta" href="../Pages/Contact.html">Contact</a>
+          <p class="menu cta">Menu &#9776;</p>
+     </header>
 
-          <!--Side Nav Bar Mobile-->
-          <div class="overlay">
-               <a class="close">&times;</a>
-               <div class="overlay__content">
-                    <a href="../Pages/Games.html">Games</a>
-                    <a href="../Pages/Projects.html">Projects</a>
-                    <a href="../Pages/About.html">About</a>
-                    <a href="../Pages/Contact.html">Contact</a>
-               </div>
+     <!--Side Nav Bar Mobile-->
+     <div class="overlay">
+          <a class="close">&times;</a>
+          <div class="overlay__content">
+               <a href="../Pages/Games.html">Games</a>
+               <a href="../Pages/Projects.html">Projects</a>
+               <a href="../Pages/About.html">About</a>
+               <a href="../Pages/Contact.html">Contact</a>
+          </div>
+     </div>
+
+     <!--Splash Page-->
+     <div class="splashPage">
+          <h1>About Me</h1>
+     </div>
+     
+     <!--main-->
+     <div class="main">
+          <div class="one">
+               <h2>Interests!</h2>
+               <ol>
+                    <li>Programming</li>
+                    <li>Calligraphy <em>(Haven't tried this yet)</em></li>
+                    <li>Solving Puzzles</li>
+                    <li>Sudoku</li>
+                    <li>Digital Design: 3D Modeling, Sprite rendering, Et Cetera</li>
+               </ol>
           </div>
 
-          <!--Splash Page-->
-          <div class="splashPage">
-               <h1>About Me</h1>
+          <hr>
+
+          <div class="one">
+               <h2>Experiences!</h2>
+               <ol>
+                    <li>2018 Finding Purpose <em>(3D Printing/Modeling)</em></li>
+                    <li>2020 Accelerator <em>(3D Modeling)</em></li>
+                    <li>2021 Pogformer <em>(Unity)</em></li>
+                    <li>2021 Cube Physics <em>(Unity)</em></li>
+                    <li>2021 Web Development</li>
+               </ol>
           </div>
-          
-               <!--main-->
-               <div class="main">
-                    <div class="interests">
-                         <h2>Interests!</h2>
-                         <ol>
-                              <li>Programming</li>
-                              <li>Calligraphy <em>(Haven't tried this yet)</em></li>
-                              <li>Solving Puzzles</li>
-                              <li>Sudoku</li>
-                              <li>Digital Design: 3D Modeling, Sprite rendering, Et Cetera</li>
-                              <li>Science</li>
-                         </ol>
+
+          <hr> 
+
+          <div class="languages">
+               <h2>Languages!</h2>
+               <ol>
+                    <p>HTML</p>
+                    <div class="container">
+                         <div class="skills html">90%</div>
                     </div>
 
-                    <div class="education">
-                         <h2>Experiences!</h2>
-                         <ol>
-                              <li>2018 Finding Purpose <em>(3D Printing/Modeling)</em></li>
-                              <li>2020 Accelerator <em>(3D Modeling)</em></li>
-                              <li>2021 Pogformer <em>(Unity)</em></li>
-                              <li>2021 Cube Physics <em>(Unity)</em></li>
-                              <li>2021 Web Development</li>
-                              <li></li>
-                         </ol>
+                    <p>CSS</p>
+                    <div class="container">
+                         <div class="skills css">80%</div>
                     </div>
 
-                    <div class="languages">
-                         <h2>Languages!</h2>
-                         <ol>
-                              <p>HTML</p>
-                              <div class="container">
-                                   <div class="skills html">90%</div>
-                              </div>
+                    <p>JavaScript</p>
+                    <div class="container">
+                         <div class="skills js">40%</div>
+                    </div>
 
-                              <p>CSS</p>
-                              <div class="container">
-                                   <div class="skills css">80%</div>
-                              </div>
+                    <p>C#</p>
+                    <div class="container">
+                         <div class="skills c-sharp">80%</div>
+                    </div>
+                    
+                    <li>Python</li>
+                    <div class="container">
+                         <div class="skills python">60%</div>
+                    </div>
+               </ol>
+          </div>
+     </div>
+     
+     <hr>
 
-                              <p>JavaScript</p>
-                              <div class="container">
-                                   <div class="skills js">30%</div>
-                              </div>
-
-                              <p>C#</p>
-                              <div class="container">
-                                   <div class="skills c-sharp">76%</div>
-                              </div>
-                              
-                              <li>Python</li>
-                              <div class="container">
-                                   <div class="skills python">70%</div>
-                              </div>
-                         </ol>
+     <!--Footer-->
+     <footer class="footer" data-aos="fade">
+          <div class="container">
+               <div class="row">
+                    <div class="footer-col">
+                         <h4>Main</h4>
+                         <ul>
+                              <li><a href="#">Home</a></li>
+                              <li><a href="Pages/About.html">About Us</a></li>
+                              <li><a href="Pages/Contact.html">Contact</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-col">
+                         <h4>Code</h4>
+                         <ul>
+                              <li><a href="Pages/Games.html">Games</a></li>
+                              <li><a href="Pages/Projects.html">Projects</a></li>
+                         </ul>
+                    </div>
+                    <div class="footer-col">
+                         <h4>follow us</h4>
+                         <div class="social-links">
+                              <a target="_blank" href="https://github.com/Dhruv-Rayat1"><i
+                                        class="fab fa-github"></i></a>
+                              <a target="_blank" href="https://twitter.com/RayatDhruv"><i
+                                        class="fab fa-twitter"></i></a>
+                              <a target="_blank" href="https://www.instagram.com/dhruv_rayat/"><i
+                                        class="fab fa-instagram"></i></a>
+                         </div>
                     </div>
                </div>
+          </div>
+     </footer>
                
-          <!--Scripts-->
-          <script type="text/javascript" src="../JavaScript/StickyNav.js"></script>
-          <script type="text/javascript" src="../JavaScript/mobile.js"></script>
-     </body>
+     <!--Scripts-->
+     <script type="text/javascript" src="../JavaScript/StickyNav.js"></script>
+     <script type="text/javascript" src="../JavaScript/mobile.js"></script>
+
+     <!--AOS-->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+          AOS.init({offset: 1, duration: 1500 });
+     </script>
+</body>
 </html>

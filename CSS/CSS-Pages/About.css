@@ -1,16 +1,26 @@
 /* ----HTML---- */
 body,
 html {
+  line-height: 1.5;
   height: 100%;
   margin: 0;
   font-family: "Montserrat";
   background-color: #edf0f1;
+  scroll-behavior: smooth;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+hr {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 /* ----Nav Bar---- */
@@ -125,14 +135,17 @@ header {
 /* ----Splash Page---- */
 .splashPage {
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-    url("../../Images/Backgrounds/Computer5.jpg");
-  height: 88%;
+  url("../../Images/Backgrounds/Computer5.jpg");
+  height: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  margin: 1%;
+  box-shadow: 0px 1px 10px 0 rgb(0 0 0 / 70%), 0 6px 30px 0 rgb(0 0 0 / 19%);
 }
 
 .splashPage h1 {
@@ -144,8 +157,8 @@ header {
 
 /* ----Main---- */
 .main {
-  margin-top: 100px;
-  height: 1100px;
+  margin-top: 2%;
+  height: auto;
   text-align: center;
   color: #24252a;
   display: block;
@@ -155,16 +168,24 @@ header {
   font-size: 70px;
 }
 /* ---- interests ---- */
-.interests {
-  height: 300px;
+.one {
+  height: auto;
+  padding: 20px;
 }
 
-/* ---- education ---- */
-.education {
-  height: 300px;
+.one ol {
+  text-align: left;
+  margin-left: 25%;
+  margin-top: 1%;
+  background: none;
+  font-weight: 400px;
 }
 
 /* ---- languages ---- */
+.languages {
+  height: auto;
+}
+
 .container {
   width: 75%;
   margin: auto;
@@ -184,27 +205,112 @@ header {
 
 .html {
   width: 90%;
-  background-color: #e44d26;
+  background-color: #9b280b;
 }
 
 .css {
   width: 80%;
-  background-color: #264de4;
+  background-color: #2f46a5;
 }
 
 .js {
   width: 30%;
-  background-color: #f7e018;
+  background-color: #b9ac31;
 }
 
 .c-sharp {
   width: 76%;
-  background-color: #672079;
+  background-color: #612a6e;
 }
 
 .python {
   width: 70%;
   background-color: #24252a;
+}
+
+/* ---- Footer ---- */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+  background-color: #24262b;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+  background-color: #24252a;
+}
+
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #0088a9;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
 
 /* ----Responsive Design---- */
@@ -234,11 +340,7 @@ header {
     text-align: center;
   }
 
-  .interests h2 {
-    font-size: 50px;
-  }
-
-  .education h2 {
+  .one h2 {
     font-size: 50px;
   }
 
@@ -261,5 +363,18 @@ header {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+
+@media(max-width: 767px){
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
   }
 }
