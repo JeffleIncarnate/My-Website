@@ -159,6 +159,8 @@ form {
   border-radius: 50px 10px;
   padding: 55px 30px;
   color: #edf0f1;
+  box-shadow: 00px 1px 10px 00 rgba(0, 0, 0, 0.7),
+  0 6px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
 form .title h2 {
